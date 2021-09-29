@@ -27,6 +27,9 @@ jobs:
         
       - name: Super-Linter
         uses: github/super-linter@v4.8.0
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
       # Runs a set of commands using the runners shell
