@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      
-      - name: Run install
-        run: openssl s_client -connect 104.18.20.159:443
+      - uses: mmoyaferrer/set-github-variable@v1.0.0
+        with:
+          name: 'SAMPLE_VAR'
+          value: 'Hello World'
+          repository: jintaeson/action
+          token: ${{ secrets.TOKEN }}
