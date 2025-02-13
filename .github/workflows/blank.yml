@@ -1,4 +1,4 @@
-name: npm
+name: set varts
 
 on:
   push:
